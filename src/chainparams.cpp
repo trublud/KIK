@@ -215,6 +215,7 @@ public:
         genesis = CreateGenesisBlock(1561780715, 344248, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("b4396ed9913c42a58b18fd8d59846bb04a1d6be695f5321419ce700af675c350"));
+         printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         assert(genesis.hashMerkleRoot == uint256S("6e609cd0f589816d645bd108e68f9d81f67ea804d675af388e19b759435ab7089"));
 
         vFixedSeeds.clear();
@@ -303,6 +304,7 @@ public:
         genesis = CreateGenesisBlock(1561780959, 303542, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("6e5a2b1baa6fca818001d9529c1f271c4c229d6361d9f8e9d21ef33c5eab34bb"));
+         printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         assert(genesis.hashMerkleRoot == uint256S("6e609cd0f589816d645bd108e68f9d81f67ea804d675af388e19b759435ab708"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
