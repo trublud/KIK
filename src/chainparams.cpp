@@ -224,17 +224,27 @@ public:
 
         genesis = CreateGenesisBlock(1486949366, 293345, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
+           //   uint256 hash = genesis.GetHash();
+      //  printf("%s\n", hash.ToString().c_str());
+
+     //   qDebug()<<"hash:"<<hash.ToString().c_str();
+   /   printf("%s\n", genesis.GetHash().ToString().c_str());
+    //    qDebug()<<"hashGenesisBlock:"<<hashGenesisBlock.ToString().c_str();
+        printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+     //    qDebug()<<"block.hashMerkleRoot:"<<block.hashMerkleRoot.ToString().c_str();
+   // assert(block.hashMerkleRoot == uint256("a0c44c1b6dd50fcaa2bc1c4d7f8ca406506caee88578d751fb3824b41bc34d84"));
+    //block.print();
         assert(consensus.hashGenesisBlock == uint256S("0x4966625a4b2851d9fdee139e56211a0d88575f59ed816ff5e6a63deb4e3e29a0"));
         assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.litecointools.com");
-        vSeeds.emplace_back("seed-b.litecoin.loshan.co.uk");
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
+   //     vSeeds.emplace_back("testnet-seed.litecointools.com");
+    //    vSeeds.emplace_back("seed-b.litecoin.loshan.co.uk");
+   //     vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,46);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,58);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
