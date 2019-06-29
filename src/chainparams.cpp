@@ -124,7 +124,7 @@ public:
              printf("Genesis hash:  %s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("Merkel root:  %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(consensus.hashGenesisBlock == uint256S("fe5332d3c5c5d50305427b1bd0ccc880cc5c70dd9b655c0b6e2d27b9e3cb2613"));
+        assert(consensus.hashGenesisBlock == uint256S("76cc56708f8f6e923ce9fe5c452d88aae02d1fa1c12523a2de55ea89d085d5a5"));
         assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
