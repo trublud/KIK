@@ -132,7 +132,7 @@ public:
    // assert(block.hashMerkleRoot == uint256("a0c44c1b6dd50fcaa2bc1c4d7f8ca406506caee88578d751fb3824b41bc34d84"));
     //block.print();
 
-        assert(consensus.hashGenesisBlock == uint256S("6f203d11ad1c8a0613b0344d37ee7f8bbccd181e21c53eae35df7d67c4d00e25"));
+        assert(consensus.hashGenesisBlock == uint256S("5fa8604f4fb2371aab15871c7921bcfa615ea096e45008c9a04cd43efbefa8b3"));
         assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
