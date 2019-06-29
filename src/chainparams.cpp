@@ -124,13 +124,13 @@ public:
            uint256 hash = genesis.GetHash();
         printf("%s\n", hash.ToString().c_str());
 
-        qDebug()<<"hash:"<<hash.ToString().c_str();
+     //   qDebug()<<"hash:"<<hash.ToString().c_str();
         printf("%s\n", hashGenesisBlock.ToString().c_str());
-        qDebug()<<"hashGenesisBlock:"<<hashGenesisBlock.ToString().c_str();
+    //    qDebug()<<"hashGenesisBlock:"<<hashGenesisBlock.ToString().c_str();
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-         qDebug()<<"block.hashMerkleRoot:"<<block.hashMerkleRoot.ToString().c_str();
-      --  assert(block.hashMerkleRoot == uint256("a0c44c1b6dd50fcaa2bc1c4d7f8ca406506caee88578d751fb3824b41bc34d84"));
-       -- block.print();
+     //    qDebug()<<"block.hashMerkleRoot:"<<block.hashMerkleRoot.ToString().c_str();
+   // assert(block.hashMerkleRoot == uint256("a0c44c1b6dd50fcaa2bc1c4d7f8ca406506caee88578d751fb3824b41bc34d84"));
+    //block.print();
 
         assert(consensus.hashGenesisBlock == uint256S(""));
         assert(genesis.hashMerkleRoot == uint256S(""));
