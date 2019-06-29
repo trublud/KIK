@@ -234,7 +234,7 @@ public:
      //    qDebug()<<"block.hashMerkleRoot:"<<block.hashMerkleRoot.ToString().c_str();
    // assert(block.hashMerkleRoot == uint256("a0c44c1b6dd50fcaa2bc1c4d7f8ca406506caee88578d751fb3824b41bc34d84"));
     //block.print();
-        assert(consensus.hashGenesisBlock == uint256S("bb3e522b7725b0684e7b49f1edd8686570d099bc0308a9ac40ae96618aa27646"));
+        assert(consensus.hashGenesisBlock == uint256S("1ef0ff7806cabc3fd6b299cdcc4f308cb38ffa094285790bf3007aca7e96ab6d"));
         assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
 
         vFixedSeeds.clear();
