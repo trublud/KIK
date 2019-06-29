@@ -125,7 +125,7 @@ public:
         printf("Merkel root:  %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
         assert(consensus.hashGenesisBlock == uint256S("76cc56708f8f6e923ce9fe5c452d88aae02d1fa1c12523a2de55ea89d085d5a5"));
-        assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
+        assert(genesis.hashMerkleRoot == uint256S("72e22a2ef32acd7277b7f437e5286893515c14155a22a3a0c48f3e6810431ecf"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -224,7 +224,7 @@ public:
         printf("Merkel root:  %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
         assert(consensus.hashGenesisBlock == uint256S("9326dba8ba0ad2a711e5583b791488c494cc080d7e27ebe74e286dba5a25a53e"));
-        assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
+        assert(genesis.hashMerkleRoot == uint256S("72e22a2ef32acd7277b7f437e5286893515c14155a22a3a0c48f3e6810431ecf"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -311,8 +311,10 @@ public:
 
         genesis = CreateGenesisBlock(1296688602, 0, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
+                   printf("Genesis hash:  %s\n", consensus.hashGenesisBlock.ToString().c_str());
+        printf("Merkel root:  %s\n", genesis.hashMerkleRoot.ToString().c_str());
         assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
-        assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
+        assert(genesis.hashMerkleRoot == uint256S("72e22a2ef32acd7277b7f437e5286893515c14155a22a3a0c48f3e6810431ecf"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
