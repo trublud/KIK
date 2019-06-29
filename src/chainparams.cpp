@@ -125,7 +125,7 @@ public:
         printf("%s\n", hash.ToString().c_str());
 
      //   qDebug()<<"hash:"<<hash.ToString().c_str();
-        printf("%s\n", hashGenesisBlock.ToString().c_str());
+        printf("%s\n", genesis.GetHash().ToString().c_str());
     //    qDebug()<<"hashGenesisBlock:"<<hashGenesisBlock.ToString().c_str();
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
      //    qDebug()<<"block.hashMerkleRoot:"<<block.hashMerkleRoot.ToString().c_str();
