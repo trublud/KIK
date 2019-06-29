@@ -242,7 +242,7 @@ public:
       printf("testnet block.nNonce = %u \n", genesis.nNonce);
       printf("testnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
       printf("testnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        assert(consensus.hashGenesisBlock == uint256S("7014cbaf34573ac52594abf3206b4f987f2ded52164aa9a9a647a3f78677560b"));
+        assert(consensus.hashGenesisBlock == uint256S("9ae47e573a5a46b5e1ebc333876cdd3da6f225c28ea48225dba8b69ccb54311f"));
         assert(genesis.hashMerkleRoot == uint256S("e3ec5a6af00f7c668b4c0599176cd57e048aeebd027470da79dae6ab09af4ad8"));
 
         vFixedSeeds.clear();
