@@ -121,19 +121,19 @@ public:
 
         genesis = CreateGenesisBlock(1317972665, 2084524493, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-           uint256 hash = genesis.GetHash();
-        printf("%s\n", hash.ToString().c_str());
+        //   uint256 hash = genesis.GetHash();
+      //  printf("%s\n", hash.ToString().c_str());
 
      //   qDebug()<<"hash:"<<hash.ToString().c_str();
-        printf("%s\n", genesis.GetHash().ToString().c_str());
+    //    printf("%s\n", genesis.GetHash().ToString().c_str());
     //    qDebug()<<"hashGenesisBlock:"<<hashGenesisBlock.ToString().c_str();
-        printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+    //    printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
      //    qDebug()<<"block.hashMerkleRoot:"<<block.hashMerkleRoot.ToString().c_str();
    // assert(block.hashMerkleRoot == uint256("a0c44c1b6dd50fcaa2bc1c4d7f8ca406506caee88578d751fb3824b41bc34d84"));
     //block.print();
 
-        assert(consensus.hashGenesisBlock == uint256S(""));
-        assert(genesis.hashMerkleRoot == uint256S(""));
+        assert(consensus.hashGenesisBlock == uint256S("6f203d11ad1c8a0613b0344d37ee7f8bbccd181e21c53eae35df7d67c4d00e25"));
+        assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -161,26 +161,7 @@ public:
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
 
-        checkpointData = {
-            {
-                {  1500, uint256S("0x841a2965955dd288cfa707a755d05a54e45f8bd476835ec9af4402a2b59a2967")},
-                {  4032, uint256S("0x9ce90e427198fc0ef05e5905ce3503725b80e26afd35a987965fd7e3d9cf0846")},
-                {  8064, uint256S("0xeb984353fc5190f210651f150c40b8a4bab9eeeff0b729fcb3987da694430d70")},
-                { 16128, uint256S("0x602edf1859b7f9a6af809f1d9b0e6cb66fdc1d4d9dcd7a4bec03e12a1ccd153d")},
-                { 23420, uint256S("0xd80fdf9ca81afd0bd2b2a90ac3a9fe547da58f2530ec874e978fce0b5101b507")},
-                { 50000, uint256S("0x69dc37eb029b68f075a5012dcc0419c127672adb4f3a32882b2b3e71d07a20a6")},
-                { 80000, uint256S("0x4fcb7c02f676a300503f49c764a89955a8f920b46a8cbecb4867182ecdb2e90a")},
-                {120000, uint256S("0xbd9d26924f05f6daa7f0155f32828ec89e8e29cee9e7121b026a7a3552ac6131")},
-                {161500, uint256S("0xdbe89880474f4bb4f75c227c77ba1cdc024991123b28b8418dbbf7798471ff43")},
-                {179620, uint256S("0x2ad9c65c990ac00426d18e446e0fd7be2ffa69e9a7dcb28358a50b2b78b9f709")},
-                {240000, uint256S("0x7140d1c4b4c2157ca217ee7636f24c9c73db39c4590c4e6eab2e3ea1555088aa")},
-                {383640, uint256S("0x2b6809f094a9215bafc65eb3f110a35127a34be94b7d0590a096c3f126c6f364")},
-                {409004, uint256S("0x487518d663d9f1fa08611d9395ad74d982b667fbdc0e77e9cf39b4f1355908a3")},
-                {456000, uint256S("0xbf34f71cc6366cd487930d06be22f897e34ca6a40501ac7d401be32456372004")},
-                {638902, uint256S("0x15238656e8ec63d28de29a8c75fcf3a5819afc953dcd9cc45cecc53baec74f38")},
-                {721000, uint256S("0x198a7b4de1df9478e2463bd99d75b714eab235a2e63e741641dc8a759a9840e5")},
-            }
-        };
+        checkpointData = {      };
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 a601455787cb65ffc325dda4751a99cf01d1567799ec4b04f45bb05f9ef0cbde
