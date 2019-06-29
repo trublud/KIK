@@ -148,7 +148,7 @@ public:
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = false;
+        fMineBlocksOnDemand = true;
 
         checkpointData = {};
 
@@ -215,6 +215,7 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("b4396ed9913c42a58b18fd8d59846bb04a1d6be695f5321419ce700af675c350"));
       printf("2genesis.GetHash = %s\n", BlockMerkleRoot(genesis).ToString().c_str());
+        ssert(genesis.hashMerkleRoot == BlockMerkleRoot(genesis));
       //  assert(genesis.hashMerkleRoot == uint256S("6e609cd0f589816d645bd108e68f9d81f67ea804d675af388e19b759435ab70"));
 
         vFixedSeeds.clear();
@@ -237,7 +238,7 @@ public:
 
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
-        fMineBlocksOnDemand = false;
+        fMineBlocksOnDemand = true;
 
         checkpointData = (CCheckpointData) {
             {
@@ -314,9 +315,9 @@ public:
         fMineBlocksOnDemand = true; 
 
         checkpointData = {
-            {
-                {0, uint256S("530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9")},
-            }
+     //       {
+     //           {0, uint256S("530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9")},
+    //        }
         };
 
         chainTxData = ChainTxData{
