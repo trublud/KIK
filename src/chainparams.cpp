@@ -125,15 +125,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x0"));
        // assert(consensus.hashGenesisBlock == uint256S("0c15e733689a360913440759804a6bfe3197ed9c2513b57657a13e8a4c9bba53"));
        // assert(genesis.hashMerkleRoot == uint256S("6e609cd0f589816d645bd108e68f9d81f67ea804d675af388e19b759435ab708"));
-fRequireRPCPassword = false;
-fMiningRequiresPeers = false;
-fAllowMinDifficultyBlocks = false;
-fDefaultConsistencyChecks = false;
-fRequireStandard = true;
-fMineBlocksOnDemand = true;
-fSkipProofOfWorkCheck = false;
-fTestnetToBeDeprecatedFieldRPC = false;
-fHeadersFirstSyncingActive = false;
+
+
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
@@ -157,8 +150,8 @@ fHeadersFirstSyncingActive = false;
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         fDefaultConsistencyChecks = false;
-        fRequireStandard = false;
-        fMineBlocksOnDemand = true;
+        fRequireStandard = true;
+        fMineBlocksOnDemand = false;
 
         checkpointData = {};
 
