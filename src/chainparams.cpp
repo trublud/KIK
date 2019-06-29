@@ -124,8 +124,8 @@ public:
              printf("Genesis hash:  %s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("Merkel root:  %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(consensus.hashGenesisBlock == uint256S("895aa67ef849487372fad84f9a1b7416715d86f63475cd2671e0f0dc871bf812"));
-        assert(genesis.hashMerkleRoot == uint256S("e3ec5a6af00f7c668b4c0599176cd57e048aeebd027470da79dae6ab09af4ad8"));
+        assert(consensus.hashGenesisBlock == uint256S("fe5332d3c5c5d50305427b1bd0ccc880cc5c70dd9b655c0b6e2d27b9e3cb2613"));
+        assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -239,7 +239,7 @@ public:
         printf("Merkel root:  %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
         assert(consensus.hashGenesisBlock == uint256S("9ae47e573a5a46b5e1ebc333876cdd3da6f225c28ea48225dba8b69ccb54311f"));
-        assert(genesis.hashMerkleRoot == uint256S("e3ec5a6af00f7c668b4c0599176cd57e048aeebd027470da79dae6ab09af4ad8"));
+        assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -327,7 +327,7 @@ public:
         genesis = CreateGenesisBlock(1296688602, 0, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(genesis.hashMerkleRoot == uint256S("2352b7d7f0d73d1f7ecfb364683ba1333335e2444e4c37528836c2b78e46bc81"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
