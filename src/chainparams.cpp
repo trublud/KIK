@@ -223,7 +223,7 @@ public:
              printf("Genesis hash:  %s\n", consensus.hashGenesisBlock.ToString().c_str());
         printf("Merkel root:  %s\n", genesis.hashMerkleRoot.ToString().c_str());
 
-        assert(consensus.hashGenesisBlock == uint256S("9326dba8ba0ad2a711e5583b791488c494cc080d7e27ebe74e286dba5a25a53e"));
+        assert(consensus.hashGenesisBlock == uint256S("b76dc529d4c25a8fffbcd8c506575902e9d822288b6f728de228b2af81da1a50"));
         assert(genesis.hashMerkleRoot == uint256S("72e22a2ef32acd7277b7f437e5286893515c14155a22a3a0c48f3e6810431ecf"));
 
         vFixedSeeds.clear();
