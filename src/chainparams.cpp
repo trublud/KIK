@@ -214,7 +214,7 @@ public:
         genesis = CreateGenesisBlock(1561780715, 344248, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("b4396ed9913c42a58b18fd8d59846bb04a1d6be695f5321419ce700af675c350"));
-      printf("2genesis.GetHash = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+      printf("2genesis.GetHash = %s\n", BlockMerkleRoot(genesis).ToString().c_str());
         assert(genesis.hashMerkleRoot == uint256S(""));
 
         vFixedSeeds.clear();
