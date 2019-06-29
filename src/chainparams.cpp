@@ -127,8 +127,8 @@ public:
       printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
       printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
       printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        assert(consensus.hashGenesisBlock == uint256S("e3ec5a6af00f7c668b4c0599176cd57e048aeebd027470da79dae6ab09af4ad8"));
-        assert(genesis.hashMerkleRoot == uint256S("171dee7bbb17b57880d870b3c09b7a2dfc0b483f33640408324c75acb3f67587"));
+        assert(consensus.hashGenesisBlock == uint256S("171dee7bbb17b57880d870b3c09b7a2dfc0b483f33640408324c75acb3f67587"));
+        assert(genesis.hashMerkleRoot == uint256S("e3ec5a6af00f7c668b4c0599176cd57e048aeebd027470da79dae6ab09af4ad8"));
 
         // Note that of those which support the service bits prefix, most only support a subset of
         // possible options.
@@ -243,7 +243,7 @@ public:
       printf("testnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
       printf("testnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         assert(consensus.hashGenesisBlock == uint256S("7014cbaf34573ac52594abf3206b4f987f2ded52164aa9a9a647a3f78677560b"));
-        assert(genesis.hashMerkleRoot == uint256S("171dee7bbb17b57880d870b3c09b7a2dfc0b483f33640408324c75acb3f67587"));
+        assert(genesis.hashMerkleRoot == uint256S("e3ec5a6af00f7c668b4c0599176cd57e048aeebd027470da79dae6ab09af4ad8"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
