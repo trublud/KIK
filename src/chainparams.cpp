@@ -121,10 +121,9 @@ public:
 
         genesis = CreateGenesisBlock(1561769805, 599429, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-         assert(consensus.hashGenesisBlock == uint256S("0x0"));
-        assert(genesis.hashMerkleRoot == uint256S("0x0"));
-       // assert(consensus.hashGenesisBlock == uint256S("0c15e733689a360913440759804a6bfe3197ed9c2513b57657a13e8a4c9bba53"));
-       // assert(genesis.hashMerkleRoot == uint256S("6e609cd0f589816d645bd108e68f9d81f67ea804d675af388e19b759435ab708"));
+       
+       assert(consensus.hashGenesisBlock == uint256S("0c15e733689a360913440759804a6bfe3197ed9c2513b57657a13e8a4c9bba53"));
+       assert(genesis.hashMerkleRoot == uint256S("6e609cd0f589816d645bd108e68f9d81f67ea804d675af388e19b759435ab708"));
 
 
         // Note that of those which support the service bits prefix, most only support a subset of
@@ -210,7 +209,7 @@ public:
         pchMessageStart[0] = 0xf1;
         pchMessageStart[1] = 0xd1;
         pchMessageStart[2] = 0xc1;
-        pchMessageStart[3] = 0xf1;
+        pchMessageStart[3] = 0xf5;
         nDefaultPort = 19090;
         nPruneAfterHeight = 1000;
 
@@ -240,8 +239,8 @@ public:
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
         fDefaultConsistencyChecks = false;
-        fRequireStandard = false;
-        fMineBlocksOnDemand = true;
+        fRequireStandard = true;
+        fMineBlocksOnDemand = false;
 
         checkpointData = (CCheckpointData) {
             {
@@ -298,7 +297,7 @@ public:
         consensus.defaultAssumeValid = uint256S("0x00");
 
         pchMessageStart[0] = 0xfe;
-        pchMessageStart[1] = 0xbe;
+        pchMessageStart[1] = 0xb2;
         pchMessageStart[2] = 0xbe;
         pchMessageStart[3] = 0xde;
         nDefaultPort = 19909;
@@ -329,7 +328,7 @@ public:
             0
         };
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,46);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,58);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
