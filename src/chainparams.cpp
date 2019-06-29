@@ -119,15 +119,15 @@ public:
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1317972665, 2084524493, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1561832929, 2084524493, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         //   uint256 hash = genesis.GetHash();
       //  printf("%s\n", hash.ToString().c_str());
 
      //   qDebug()<<"hash:"<<hash.ToString().c_str();
-    //    printf("%s\n", genesis.GetHash().ToString().c_str());
+        printf("%s\n", genesis.GetHash().ToString().c_str());
     //    qDebug()<<"hashGenesisBlock:"<<hashGenesisBlock.ToString().c_str();
-    //    printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
+       printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
      //    qDebug()<<"block.hashMerkleRoot:"<<block.hashMerkleRoot.ToString().c_str();
    // assert(block.hashMerkleRoot == uint256("a0c44c1b6dd50fcaa2bc1c4d7f8ca406506caee88578d751fb3824b41bc34d84"));
     //block.print();
@@ -222,7 +222,7 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1486949366, 293345, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1561832929, 293345, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
            //   uint256 hash = genesis.GetHash();
       //  printf("%s\n", hash.ToString().c_str());
